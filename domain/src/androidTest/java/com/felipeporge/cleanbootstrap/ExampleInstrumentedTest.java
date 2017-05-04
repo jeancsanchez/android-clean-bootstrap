@@ -1,4 +1,4 @@
-package com.felipeporge.cleanarch;
+package com.felipeporge.cleanbootstrap;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

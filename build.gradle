@@ -19,7 +19,7 @@ allprojects {
             options.compilerArgs << "-parameters"
         }
     }
-    
+
     repositories {
         jcenter()
     }

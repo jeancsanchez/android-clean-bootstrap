@@ -1,4 +1,4 @@
-package com.felipeporge.cleanarch.domain.repositories;
+package com.felipeporge.cleanbootstrap.domain.repositories;
 
 /**
  * This class describes a repository.

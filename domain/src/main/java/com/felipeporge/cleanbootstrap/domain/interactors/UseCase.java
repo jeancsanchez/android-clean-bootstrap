@@ -1,8 +1,8 @@
-package com.felipeporge.cleanarch.domain.interactors;
+package com.felipeporge.cleanbootstrap.domain.interactors;
 
 
-import com.felipeporge.cleanarch.domain.executors.PostExecutorThread;
-import com.felipeporge.cleanarch.domain.executors.TaskExecutor;
+import com.felipeporge.cleanbootstrap.domain.executors.PostExecutorThread;
+import com.felipeporge.cleanbootstrap.domain.executors.TaskExecutor;
 
 /**
  * This class represents a basic user case.

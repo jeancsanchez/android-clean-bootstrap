@@ -1,4 +1,4 @@
-package com.felipeporge.cleanarch.domain.executors;
+package com.felipeporge.cleanbootstrap.domain.executors;
 
 /**
  * This class represents an post executor thread.

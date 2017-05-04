@@ -10,7 +10,7 @@ import javax.inject.Inject;
 
 
 /**
- * This class represents a mPresenter fragment.
+ * This class represents a presenter fragment.
  * @author Felipe Porge Xavier - <a href="http://www.felipeporge.com/">www.felipeporge.com</a>
  * @since 22/11/16
  */

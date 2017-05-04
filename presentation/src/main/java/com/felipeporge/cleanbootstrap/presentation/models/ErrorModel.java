@@ -14,7 +14,7 @@ public class ErrorModel {
 
     /**
      * Constructor method.
-     * @param message   Error mMessage.
+     * @param message   Error message.
      */
     public ErrorModel(boolean isAdvice, boolean retry, String message) {
         this.mAdvice = isAdvice;
@@ -24,19 +24,19 @@ public class ErrorModel {
 
     /**
      * Constructor method.
-     * @param isAdvice  Is this error only an mAdvice?
-     * @param message   Error mMessage.
+     * @param isAdvice  Is this error only an advice?
+     * @param message   Error message.
      * @param runnable  Runnable to execute after show.
      */
     public ErrorModel(boolean isAdvice, String message, Runnable runnable) {
-        this.mAdvice = isAdvice;
-        this.mRetry = false;
-        this.mMessage = message;
-        this.mRunnable = runnable;
+        mAdvice = isAdvice;
+        mRetry = false;
+        mMessage = message;
+        mRunnable = runnable;
     }
 
     /**
-     * Executes the mRunnable.
+     * Executes the runnable.
      */
     public void execute(){
         if(mRunnable != null)

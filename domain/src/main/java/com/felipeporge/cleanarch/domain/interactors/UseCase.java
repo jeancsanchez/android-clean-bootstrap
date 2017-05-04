@@ -24,31 +24,31 @@ public abstract class UseCase<REPO, PARAM, RESULT> implements Runnable {
      * @param repository Repository.
      */
     public UseCase(TaskExecutor executor, PostExecutorThread postExecutor, REPO repository) {
-        this.mExecutor = executor;
-        this.mPostExecutor = postExecutor;
-        this.mRepository = repository;
+        mExecutor = executor;
+        mPostExecutor = postExecutor;
+        mRepository = repository;
     }
 
     /**
-     * Gets the use case mRepository.
-     * @return Use case mRepository.
+     * Gets the use case repository.
+     * @return Use case repository.
      */
-    public REPO getmRepository(){
-        return this.mRepository;
+    public REPO getRepository(){
+        return mRepository;
     }
 
     /**
-     * Gets the use case mParams.
-     * @return Use case mParams.
+     * Gets the use case params.
+     * @return Use case params.
      */
-    public PARAM getmParams(){
-        return this.mParams;
+    public PARAM getParams(){
+        return mParams;
     }
 
     /**
      * Executes this use case.
      * @param param Use case param.
-     * @param callback Use case mCallback.
+     * @param callback Use case callback.
      */
     public void execute(PARAM param, UseCaseCallback<RESULT> callback){
         mCallback = callback;

@@ -14,7 +14,7 @@ public interface ErrorFactory {
     /**
      * Create an error model based on an exception.
      * @param context           The context.
-     * @param defaultMsgResId   Default message string esource id.
+     * @param defaultMsgResId   Default message string resource id.
      * @param exception         Exception to treat.
      * @return                  Error model instance.
      */

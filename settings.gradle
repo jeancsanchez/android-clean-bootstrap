@@ -1,1 +1,1 @@
-include ':cleanarch'
+include ':presentation', ':domain'

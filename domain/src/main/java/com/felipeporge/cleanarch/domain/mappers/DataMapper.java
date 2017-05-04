@@ -1,4 +1,4 @@
-package com.felipeporge.cleanbootstrap.domain.mappers;
+package com.felipeporge.cleanarch.domain.mappers;
 
 import java.util.ArrayList;
 

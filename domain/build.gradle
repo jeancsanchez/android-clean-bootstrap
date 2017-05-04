@@ -8,8 +8,8 @@ android {
         minSdkVersion 15
         targetSdkVersion 25
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
-    
     buildTypes {
         release {
             minifyEnabled false
@@ -28,12 +28,4 @@ dependencies {
 
     // Tests - JUnit4:
     testCompile 'junit:junit:4.12'
-
-    // Android Support:
-    compile 'com.android.support:appcompat-v7:25.3.1'
-
-    // Inject annotation for dagger.
-    compile 'com.google.dagger:dagger:2.0'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.0'
-    provided 'org.glassfish:javax.annotation:10.0-b28'
 }

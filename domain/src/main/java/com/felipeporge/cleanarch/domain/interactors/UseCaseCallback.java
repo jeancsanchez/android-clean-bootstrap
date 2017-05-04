@@ -1,4 +1,4 @@
-package com.felipeporge.cleanbootstrap.domain.interactors;
+package com.felipeporge.cleanarch.domain.interactors;
 
 /**
  * This class represents an use case callback.

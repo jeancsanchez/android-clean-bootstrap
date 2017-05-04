@@ -1,4 +1,4 @@
-package com.felipeporge.cleanbootstrap.domain.executors;
+package com.felipeporge.cleanarch.domain.executors;
 
 /**
  * This class represents a task executor.

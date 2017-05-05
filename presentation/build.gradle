@@ -33,7 +33,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
 
     // Inject annotation for dagger.
-    compile 'com.google.dagger:dagger:2.0'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.0'
-    provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'javax.inject:javax.inject:1'
 }

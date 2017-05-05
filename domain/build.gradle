@@ -7,7 +7,6 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
     buildTypes {
@@ -20,12 +19,4 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-
-    // Tests - Espresso:
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-
-    // Tests - JUnit4:
-    testCompile 'junit:junit:4.12'
 }

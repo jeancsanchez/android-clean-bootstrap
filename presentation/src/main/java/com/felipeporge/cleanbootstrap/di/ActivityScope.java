@@ -1,5 +1,8 @@
 package com.felipeporge.cleanbootstrap.di;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
 import javax.inject.Scope;
 
 /**
@@ -8,4 +11,5 @@ import javax.inject.Scope;
  * @since 23/11/16
  */
 @Scope
+@Retention(RetentionPolicy.RUNTIME)
 public @interface ActivityScope {}

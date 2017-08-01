@@ -85,4 +85,12 @@ public abstract class UseCase<REPO, PARAM, RESULT> implements Runnable {
             });
         }
     }
+
+    /**
+     * Gets use case callback.
+     * @return  Use case callback.
+     */
+    public UseCaseCallback<RESULT> getCallback(){
+        return mCallback;
+    }
 }

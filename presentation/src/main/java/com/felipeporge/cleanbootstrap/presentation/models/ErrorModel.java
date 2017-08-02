@@ -7,58 +7,71 @@ package com.felipeporge.cleanbootstrap.presentation.models;
  */
 public class ErrorModel {
 
-    private boolean mAdvice = true;
-    private boolean mRetry = false;
-    private Runnable mRunnable = null;
-    private String mMessage;
+    private String message = "";
+    private boolean allowRetry = false;
+    private boolean isWarning = false;
+    private Runnable requiredAction = null;
 
     /**
      * Constructor method.
      * @param message   Error message.
+     * @param allowRetry    Allows retry.
+     * @param isWarning Is warning.
      */
-    public ErrorModel(boolean isAdvice, boolean retry, String message) {
-        this.mAdvice = isAdvice;
-        this.mRetry = retry;
-        this.mMessage = message;
+    public ErrorModel(
+            String message,
+            boolean allowRetry,
+            boolean isWarning
+    ){
+        this.message = message;
+        this.allowRetry = allowRetry;
+        this.isWarning = isWarning;
     }
 
+
     /**
      * Constructor method.
-     * @param isAdvice  Is this error only an advice?
      * @param message   Error message.
-     * @param runnable  Runnable to execute after show.
+     * @param allowRetry    Allows retry.
+     * @param isWarning Is warning.
+     * @param requiredAction    Required action to run.
      */
-    public ErrorModel(boolean isAdvice, String message, Runnable runnable) {
-        mAdvice = isAdvice;
-        mRetry = false;
-        mMessage = message;
-        mRunnable = runnable;
+    public ErrorModel(
+            String message,
+            boolean allowRetry,
+            boolean isWarning,
+            Runnable requiredAction
+    ){
+        this.message = message;
+        this.allowRetry = allowRetry;
+        this.isWarning = isWarning;
+        this.requiredAction = requiredAction;
     }
 
     /**
      * Executes the runnable.
      */
     public void execute(){
-        if(mRunnable != null)
-            mRunnable.run();
+        if(requiredAction != null)
+            requiredAction.run();
     }
 
     /* Getters and Setters - BEGIN */
 
-    public boolean isAdvice() {
-        return mAdvice;
-    }
-
     public String getMessage() {
-        return mMessage;
+        return message;
     }
 
-    public boolean isRetry() {
-        return mRetry;
+    public boolean isAllowRetry() {
+        return allowRetry;
     }
 
-    public Runnable getRunnable() {
-        return mRunnable;
+    public boolean isWarning() {
+        return isWarning;
+    }
+
+    public Runnable getRequiredAction() {
+        return requiredAction;
     }
 
     /* Getters and Setters - END */

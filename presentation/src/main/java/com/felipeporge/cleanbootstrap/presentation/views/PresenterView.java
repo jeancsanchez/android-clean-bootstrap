@@ -1,7 +1,5 @@
 package com.felipeporge.cleanbootstrap.presentation.views;
 
-import android.content.Context;
-
 import com.felipeporge.cleanbootstrap.presentation.presenters.Presenter;
 
 /**
@@ -28,11 +26,4 @@ public interface PresenterView<P> {
      * @return True (if this view is valid) or false (otherwise).
      */
     boolean isValid();
-
-
-    /**
-     * Gets the view context.
-     * @return View context.
-     */
-    Context getViewContext();
 }

@@ -1,6 +1,5 @@
 package com.felipeporge.cleanbootstrap.presentation.views.activities;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -68,11 +67,6 @@ public abstract class PresenterActivity<PRESENTER extends Presenter> extends App
     @Override
     public boolean isValid() {
         return !isFinishing() && !isDestroyed();
-    }
-
-    @Override
-    public Context getViewContext() {
-        return this;
     }
 
 }

@@ -1,6 +1,5 @@
 package com.felipeporge.cleanbootstrap.presentation.views.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -68,10 +67,5 @@ public abstract class PresenterFragment<PRESENTER extends Presenter> extends Fra
     @Override
     public boolean isValid() {
         return !isDetached() && !isRemoving() && getContext() != null;
-    }
-
-    @Override
-    public Context getViewContext() {
-        return getContext();
     }
 }

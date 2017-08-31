@@ -1,6 +1,5 @@
 package com.felipeporge.cleanbootstrap.presentation.views.dialogs;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 
@@ -67,11 +66,4 @@ public abstract class PresenterDialog<PRESENTER extends Presenter> extends Dialo
     public boolean isValid() {
         return !isDetached() && !isRemoving() && getContext() != null;
     }
-
-    @Override
-    public Context getViewContext() {
-        return getContext();
-    }
-
-
 }

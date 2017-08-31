@@ -1,8 +1,6 @@
 package com.felipeporge.cleanbootstrap.presentation.presenters;
 
 
-import android.content.Context;
-
 import com.felipeporge.cleanbootstrap.presentation.views.PresenterView;
 
 
@@ -57,13 +55,5 @@ public abstract class Presenter<VIEW extends PresenterView> {
      */
     public boolean isViewValid(){
         return getView() != null && getView().isValid();
-    }
-
-    /**
-     * Gets view context.
-     * @return View context.
-     */
-    public Context getViewContext(){
-        return getView().getViewContext();
     }
 }

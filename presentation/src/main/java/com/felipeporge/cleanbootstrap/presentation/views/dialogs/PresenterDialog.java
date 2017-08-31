@@ -1,6 +1,7 @@
 package com.felipeporge.cleanbootstrap.presentation.views.dialogs;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 
 import com.felipeporge.cleanbootstrap.presentation.presenters.Presenter;
@@ -18,8 +19,8 @@ public abstract class PresenterDialog<PRESENTER extends Presenter> extends Dialo
     private PRESENTER mPresenter;
 
     @Override
-    public void onStart() {
-        super.onStart();
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
         if(mPresenter != null) {
             mPresenter.setView(this);

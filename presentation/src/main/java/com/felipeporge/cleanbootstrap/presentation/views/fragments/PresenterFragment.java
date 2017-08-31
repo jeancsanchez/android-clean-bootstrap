@@ -1,6 +1,8 @@
 package com.felipeporge.cleanbootstrap.presentation.views.fragments;
 
 import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 import com.felipeporge.cleanbootstrap.presentation.presenters.Presenter;
@@ -19,8 +21,8 @@ public abstract class PresenterFragment<PRESENTER extends Presenter> extends Fra
     private PRESENTER mPresenter;
 
     @Override
-    public void onStart() {
-        super.onStart();
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
         if(mPresenter != null) {
             mPresenter.setView(this);

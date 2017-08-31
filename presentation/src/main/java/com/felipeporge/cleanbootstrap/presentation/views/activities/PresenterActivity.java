@@ -1,6 +1,8 @@
 package com.felipeporge.cleanbootstrap.presentation.views.activities;
 
 import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.felipeporge.cleanbootstrap.presentation.presenters.Presenter;
@@ -19,8 +21,8 @@ public abstract class PresenterActivity<PRESENTER extends Presenter> extends App
     private PRESENTER mPresenter;
 
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         if(mPresenter != null) {
             mPresenter.setView(this);

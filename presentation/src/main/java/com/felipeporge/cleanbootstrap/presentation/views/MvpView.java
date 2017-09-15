@@ -88,6 +88,18 @@ public interface MvpView {
     void showError(ErrorModel error, OnRetryListener retryListener, int requestCode);
 
 
+    /**
+     * Shows an error.
+     * @param exception         Exception to show.
+     */
+    void showError(Exception exception);
+
+    /**
+     * Shows an error.
+     * @param exception         Exception to show.
+     * @param retryListener On retry listener.
+     */
+    void showError(Exception exception, OnRetryListener retryListener);
 
     /**
      * Hides the keyboard.
